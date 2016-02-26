@@ -4,9 +4,9 @@ var movableShape = {
 	x: 0,
 	y: 0,
 	// origin is used to store the original position of the shape
-	origin: { x: -125, y: 200},
+	origin: { x: 0, y: 200},
 	// delta.x and delta.y indicate how much to move() the shape
-	speed: { x: -5, y: 0 },
+	speed: { x: -2, y: 0 },
 
 	/*
 		Put your shape(s) in drawShape()
@@ -32,6 +32,7 @@ var movableShape = {
 	// If you wanted to build some acceleration in here, you might add a line or two to modify the speed
 	update: function () {
 		this.move();
+		this.speed.x += -0.30
 
 	},
 
